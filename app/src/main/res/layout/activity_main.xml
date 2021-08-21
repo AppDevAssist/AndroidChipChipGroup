@@ -14,8 +14,17 @@
         <com.google.android.material.chip.Chip
             android:id="@+id/chip1"
             style="@style/Widget.MaterialComponents.Chip.Filter"
+            app:checkedIconTint="@color/chip_text"
+            app:chipBackgroundColor="@color/chip_background"
+            android:textColor="@color/chip_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:chipStartPadding="20dp"
+            app:chipEndPadding="20dp"
+            app:chipCornerRadius="5dp"
+            app:rippleColor="@color/chip_text"
+            app:chipStrokeWidth="2dp"
+            app:chipStrokeColor="@color/chip_text"
             android:checked="true"
             android:text="Filter 1" />
 
@@ -35,6 +44,10 @@
         <com.google.android.material.chip.Chip
             android:id="@+id/chip5"
             style="@style/Widget.MaterialComponents.Chip.Entry"
+            app:chipIconTint="@color/chip_text"
+            app:closeIconTint="@color/chip_text"
+            app:chipIcon="@drawable/ic_baseline_android_24"
+            app:chipBackgroundColor="@color/chip_background"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checkable="false"
@@ -56,6 +69,9 @@
 
         <com.google.android.material.chip.Chip
             style="@style/Widget.MaterialComponents.Chip.Choice"
+            app:chipBackgroundColor="@color/chip_background"
+            app:chipIcon="@drawable/ic_baseline_android_24"
+            app:chipIconEnabled="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Choice 1" />
@@ -74,6 +90,8 @@
 
         <com.google.android.material.chip.Chip
             style="@style/Widget.MaterialComponents.Chip.Action"
+            app:chipBackgroundColor="@color/chip_background"
+            app:chipIcon="@drawable/ic_baseline_android_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Action 1" />
